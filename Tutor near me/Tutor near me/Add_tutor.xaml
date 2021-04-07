@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+              NavigationPage.HasNavigationBar="False"
+             mc:Ignorable="d"
+             BackgroundColor="Black"
+             x:Class="Tutor_near_me.Add_tutor"
+             >
+
+    <ScrollView>
+       
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="340" Padding="10">
+            <StackLayout HorizontalOptions="Fill">
+                <Image x:Name="imgChoosed" HeightRequest="150" WidthRequest="300"></Image>
+            </StackLayout>
+            <Label Margin="0,0,0,10" Text="Upload an image of tution area" FontAttributes="Bold" FontSize="Caption" TextColor="LightGray" HorizontalTextAlignment="Center" ></Label>
+            <StackLayout  HorizontalOptions="End" Orientation="Horizontal">
+                <Button x:Name="btnPick" WidthRequest="100" HeightRequest="40" Text="Browse" Clicked="BtnPick_Clicked"  BackgroundColor="White" TextColor="Black" CornerRadius="20"/>
+                <Button x:Name="btnUpload" WidthRequest="100" HeightRequest="40" Text="Upload" Clicked="BtnUpload_Clicked" BackgroundColor="White"  TextColor="Black" CornerRadius="20"/>
+            </StackLayout>
+
+            <Frame Padding="3" OutlineColor="white" CornerRadius="15"  BackgroundColor="White" HeightRequest="1000">
+                <Frame.Content>
+                    <StackLayout Padding="15"  Orientation="Vertical" HorizontalOptions="Center">
+
+                        <Frame  BorderColor="Gray"  Padding="5" >
+                            <Entry x:Name="Tutname" Placeholder="Tution Center Name/Tutor Name"  TextColor="Black" HorizontalTextAlignment="Center"></Entry>
+                        </Frame>
+                        <Frame   BorderColor="Gray"  Padding="5">
+                            <Editor x:Name="Tutadd" Placeholder="Address"  TextColor="Black" HeightRequest="150" Keyboard="Plain" AutoSize="TextChanges" MaxLength="1000" ></Editor>
+                        </Frame>
+                        <Frame   BorderColor="Gray" Padding="5">
+                            <Entry x:Name ="Tutphn" Placeholder="Phone No." Keyboard="Numeric" TextColor="Black" HorizontalTextAlignment="Center"></Entry>
+                        </Frame>
+                        <Frame BorderColor="Gray" Padding="5">
+                            <Entry x:Name="Tutsea" Placeholder="Number of Seats Available" Keyboard="Numeric" TextColor="Black" HorizontalTextAlignment="Center"></Entry>
+                        </Frame>
+                        <Frame   BorderColor="Gray" Padding="5">
+                            <Entry x:Name ="Nos" Placeholder="Number of students joined this year" Keyboard="Numeric" TextColor="Black" HorizontalTextAlignment="Center"></Entry>
+                        </Frame>
+                        <Frame  BorderColor="Gray" Padding="5">
+                            <Editor x:Name="TutSub"  HeightRequest="150" TextColor="Black" Placeholder="Course details - Fees" Keyboard="Plain" AutoSize="TextChanges" MaxLength="10000"/>
+                        </Frame>
+                        <Frame  BorderColor="Gray" Padding="5">
+                            <Editor x:Name="TutStaff"  HeightRequest="150" TextColor="Black" Placeholder="Staff details - Proficiency" Keyboard="Plain" AutoSize="TextChanges" MaxLength="10000"/>
+                        </Frame>
+                        <Frame BorderColor="Gray" Padding="5">
+                            <Picker x:Name="picker"
+                    Title="Select your City"
+                    TitleColor="Black"
+                    HorizontalOptions="FillAndExpand">
+                                <Picker.ItemsSource>
+                                    <x:Array Type="{x:Type x:String}">
+                                        <x:String>Udupi</x:String>
+                                        <x:String>Malpe</x:String>
+                                        <x:String>Mulki</x:String>
+                                        <x:String>Brahmavara</x:String>
+                                        <x:String>Kundapur</x:String>
+                                        <x:String>Mangaluru</x:String>
+                                        <x:String>Karkala</x:String>
+                                        <x:String>Someshwara</x:String>
+                                        <x:String>Mudbidri</x:String>
+                                    </x:Array>
+                                </Picker.ItemsSource>
+                            </Picker>
+                        </Frame>
+
+                        <StackLayout  HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                            <Button x:Name="btnAdd" WidthRequest="150" HeightRequest="60" Text="ADD / UPDATE" Clicked="BtnAdd_Clicked" BackgroundColor="Black" TextColor="White" CornerRadius="20"/>
+                            <Button x:Name="btnPreview" WidthRequest="150" HeightRequest="60" Text="Preview" Clicked="BtnPreview_Clicked" BackgroundColor="Black" TextColor="White" CornerRadius="20"/>
+                        </StackLayout>
+                        <StackLayout  HorizontalOptions="CenterAndExpand" Orientation="Vertical">
+                            <Button x:Name="deletetut" WidthRequest="170" HorizontalOptions="CenterAndExpand" IsEnabled="False" HeightRequest="60" Text="Delete" Clicked="BtnDelete_Clicked" BackgroundColor="Black" TextColor="White" CornerRadius="20"/>
+                        </StackLayout>
+                        <StackLayout  HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                            <Label Text="Delete the Tution data" TextColor="Black"></Label>
+                            <CheckBox x:Name="enable" PropertyChanged="Deleteenable"></CheckBox>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame.Content>
+            </Frame>
+
+
+        </StackLayout>
+        
+    </ScrollView>
+    
+</ContentPage>

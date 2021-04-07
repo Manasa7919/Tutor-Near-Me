@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Tutor_near_me.Display_list_of_tutors"
+             NavigationPage.HasNavigationBar="False"
+             >
+ 
+    <!--<ContentPage.ToolbarItems>
+        <ToolbarItem Text="Logout"
+                 Order="Secondary"
+                 Priority="0"
+                 />
+    </ContentPage.ToolbarItems>-->
+    <StackLayout>
+        <Frame BackgroundColor="Black" VerticalOptions="Center" HeightRequest="40">
+            <SearchBar TextChanged="SearchBar_TextChanged" Placeholder="Search tution center by name" BackgroundColor="White"></SearchBar>
+        </Frame>
+        <Frame BorderColor="Black" HorizontalOptions="Center" Padding="3" VerticalOptions="Start" HeightRequest="50">
+        <StackLayout HorizontalOptions="Center" Padding="3" BackgroundColor="White" VerticalOptions="Start" HeightRequest="50">
+            <Grid Padding="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Picker x:Name="nos"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Title="City"
+                    WidthRequest="150"
+                    HorizontalTextAlignment="Center"
+                    TitleColor="Red"
+                    TextColor="Black"
+                    HorizontalOptions="Center">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Udupi</x:String>
+                            <x:String>Malpe</x:String>
+                            <x:String>Mulki</x:String>
+                            <x:String>Brahmavara</x:String>
+                            <x:String>Kundapur</x:String>
+                            <x:String>Mangaluru</x:String>
+                            <x:String>Karkala</x:String>
+                            <x:String>Someshwara</x:String>
+                            <x:String>Mudbidri</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+               
+                <Button Grid.Row="0"
+                    Grid.Column="1"  x:Name="FilterTutions" Text="Filter" HeightRequest="40" BackgroundColor="Black" Clicked="BtnFilter_Clicked"  TextColor="white" CornerRadius="15" VerticalOptions="Center"></Button>
+            </Grid>
+            </StackLayout>
+        </Frame>
+
+        <ListView x:Name="lstPersons"
+          HasUnevenRows="True"
+          ItemTapped="OnTutionSelected"
+         >
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Frame Padding="0,0,0,10" BackgroundColor="Black">
+                            <Frame.Content>
+                                <Frame Padding="20,1,20,1"   OutlineColor="Silver" CornerRadius="5" BackgroundColor="White">
+                                <Frame.Content>
+                                    <StackLayout Padding="0,0,0,0"  Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                                        <Grid Padding="3">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="30" />
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="20" />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+
+                                                <ColumnDefinition Width="230" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            <Label
+                                            Grid.Row="0"
+                                            Grid.ColumnSpan="2"
+                                             Grid.Column="0"
+                                            FontSize="22"
+                                             TextColor="Black"
+                                             Text="{Binding Name}"
+                                             FontAttributes="Bold" />
+                                            <Label Grid.Row="1"
+                                            Grid.Column="0"
+                                            Text="{Binding Location}"
+                                            VerticalOptions="Center" />
+                                            <Label Grid.Row="2"
+                                            Grid.Column="0"
+                                            Text="Number of seats available:"
+                                            VerticalOptions="Center" />
+                                             <Label Grid.Row="2"
+                                             Grid.Column="1"
+                                             Text="{Binding Seats}"
+                                             VerticalOptions="Center" />
+                                        </Grid>
+                                    </StackLayout>
+                                </Frame.Content>
+                            </Frame>
+                        </Frame.Content>
+                    </Frame>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+    </StackLayout>
+</ContentPage>

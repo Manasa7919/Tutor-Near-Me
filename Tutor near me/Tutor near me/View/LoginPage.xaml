@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:viewmodel="clr-namespace:Tutor_near_me.ViewModel"
+             x:Class="Tutor_near_me.View.LoginPage"
+             BackgroundColor="Black"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.BindingContext>
+        <viewmodel:LoginPageViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" WidthRequest="390" Padding="8">
+            <Frame Padding="3" OutlineColor="white" CornerRadius="15"  BackgroundColor="White" HorizontalOptions="Center" WidthRequest="320" HeightRequest="600">
+                <Frame.Content>
+                    <StackLayout Orientation="Vertical" VerticalOptions="Center" >
+                        <!-- Place new controls here -->
+                        <Label Text="Tutor Login" FontSize="Large" HorizontalOptions="Center" FontAttributes="Bold" TextColor="Maroon" Padding="30"/>
+                        <Image Source="pic1.png" HeightRequest="100" WidthRequest="100"/>
+
+                        <Entry Placeholder="Enter your phone number" Text="{Binding Phone}" Keyboard="Telephone" HorizontalTextAlignment="Center" ></Entry>
+
+                        <Entry Placeholder="Enter the password " IsPassword="True"  Text="{Binding Password}" HorizontalTextAlignment="Center"></Entry>
+                        <Button Text="Login" BackgroundColor="Black" TextColor="White" CornerRadius="20" HorizontalOptions="Center" WidthRequest="190" HeightRequest="50" Command="{Binding ViewDetails}"/>
+                        <Label></Label>
+                        <Button Text="New User ? Register" BackgroundColor="Black" TextColor="White" CornerRadius="20"  HorizontalOptions="Center" WidthRequest="290" HeightRequest="50"   Command="{Binding SignupCommand}" />
+                        <Button Text="I am a student" BackgroundColor="Black" TextColor="White" CornerRadius="20" HorizontalOptions="Center" WidthRequest="290" HeightRequest="50" VerticalOptions="End" Command="{Binding ListTutorsPage}"/>
+                    </StackLayout>
+                </Frame.Content>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

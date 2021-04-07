@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="Black"
+             x:Class="Tutor_near_me.SignUpPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" WidthRequest="390" Padding="8">
+            <Frame Padding="10" OutlineColor="white" CornerRadius="15"  BackgroundColor="White" HeightRequest="580" WidthRequest="320" HorizontalOptions="Center">
+                <Frame.Content>
+                    <StackLayout VerticalOptions="Center" Padding="30">
+                        <Label Text="Registration" HorizontalOptions="Center" FontAttributes="Bold" Font="30" TextColor="Black"/>
+                        <Frame  Padding="5" HorizontalOptions="Center" WidthRequest="350"  >
+                            <Entry   Placeholder="Enter your name" x:Name="Name"/>
+                        </Frame>
+                        <Frame  Padding="5" >
+                            <Entry Placeholder="Enter your phone number" Keyboard="Telephone" x:Name="phone"></Entry>
+                        </Frame>
+
+                        <Frame  Padding="5" >
+                            <Entry Placeholder="Enter a password" IsPassword="True" x:Name="Password"></Entry>
+                        </Frame>
+                        <Frame  Padding="5" >
+                            <Entry Placeholder="Re-enter the password" IsPassword="True" x:Name="Password1"></Entry>
+                        </Frame>
+                        <Frame  Padding="5" >
+                            <Entry Placeholder="Enter your email ID" Keyboard="Email" x:Name="email"></Entry>
+                        </Frame>
+                        <Frame  Padding="5" >
+                            <Editor Placeholder="Enter your address" Keyboard="Plain" HeightRequest="100" x:Name="address"></Editor>
+                        </Frame>
+                        <Button Text="Sign Up" BackgroundColor="Black" TextColor="White" CornerRadius="20" HorizontalOptions="Center" WidthRequest="200" HeightRequest="50" Clicked="SignUp_Button_Clicked" ></Button>
+                    </StackLayout>
+                </Frame.Content>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             BackgroundColor="Black"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="Tutor_near_me.TutorProfile">
+    <ScrollView>
+        
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="340" HeightRequest="600" >
+            <ImageButton Source="logout.png" WidthRequest="40" HeightRequest="40" HorizontalOptions="EndAndExpand" Clicked="LogoutClicked"></ImageButton>
+            <Frame Padding="3" OutlineColor="Gray" CornerRadius="15"  BackgroundColor="White" HeightRequest="500">
+                <Frame.Content>
+                    <StackLayout Padding="0,0,0,0"  Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                        <Grid Padding="3">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="70"/>
+                                <RowDefinition Height="70" />
+                                <RowDefinition Height="70"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100" />
+                                <ColumnDefinition Width="210" />
+                            </Grid.ColumnDefinitions>
+                <Label
+                Grid.Row="0"
+                Grid.Column="0"
+                Text="Name :"
+                TextColor="Black"
+                FontSize="13"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Start"
+                VerticalTextAlignment="Center"/>
+                            <Label
+                 Grid.Row="0"
+                Grid.Column="1"
+                x:Name="NameTutor"
+                TextColor="Black"
+                FontSize="15"
+                HorizontalTextAlignment="Start"
+                VerticalTextAlignment="Center"/>
+                            <Label
+                Grid.Row="1"
+                Grid.Column="0"
+                TextColor="Black"
+                FontSize="13"
+                Text="Phone number :"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Start"
+                VerticalTextAlignment="Center"/>
+                            <Label
+                Grid.Row="1"
+                Grid.Column="1"
+                x:Name="PhoneTutor"
+                TextColor="Black"
+                FontSize="15"
+                HorizontalTextAlignment="Start"
+                VerticalTextAlignment="Center"/>
+                            <Label
+                Grid.Row="2"
+                Grid.Column="0"
+                TextColor="Black"
+                FontSize="13"
+                Text="Email ID :"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Start"
+                VerticalTextAlignment="Center"/>
+                            <Label
+                Grid.Row="2"
+                Grid.Column="1"
+                x:Name="EmailTutor"
+                TextColor="Black"
+                FontSize="15"
+                HorizontalTextAlignment="Start"
+                VerticalTextAlignment="Center"/>
+                            <Label
+                Grid.Row="3"
+                Grid.Column="0"
+                TextColor="Black"
+                FontSize="13"
+                Text="Address :"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Start"
+                VerticalTextAlignment="Center"/>
+                            <Label
+                Grid.Row="3"
+                Grid.Column="1"
+                x:Name="AddressTutor"
+                TextColor="Black"
+                FontSize="15"
+                HorizontalTextAlignment="Start"
+                VerticalTextAlignment="Center"/>
+                        </Grid>
+                    </StackLayout>
+                </Frame.Content>
+            </Frame>
+            <Frame Padding="0,0,0,5" OutlineColor="Gray" HasShadow="True" CornerRadius="15"  BackgroundColor="White" VerticalOptions="Center" HeightRequest="200">
+                <Frame.Content>
+                    <StackLayout Padding="0,0,0,0"  Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">
+                        <Button x:Name="AddorUpdate" WidthRequest="270" HeightRequest="60" Clicked="BtnAddorUpdate_Clicked" Text="Add / Update Tution Details"  BackgroundColor="Black" TextColor="White" CornerRadius="20"/>
+                        <Button x:Name="ViewTutions" WidthRequest="270" HeightRequest="60" Clicked="BtnViewTC_Clicked" Text="View Other Tution Centers"  BackgroundColor="Black" TextColor="White" CornerRadius="20"/>
+                    </StackLayout>
+                </Frame.Content>
+            </Frame>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

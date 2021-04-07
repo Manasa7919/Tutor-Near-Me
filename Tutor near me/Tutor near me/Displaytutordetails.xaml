@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Tutor_near_me.Displaytutordetails"
+             BackgroundColor="Black"
+              NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout HorizontalOptions="Center" VerticalOptions="End" WidthRequest="340" HeightRequest="700" >
+                <Image x:Name="DisplayImageT" HeightRequest="150" WidthRequest="300"></Image>
+                <Frame Padding="3" OutlineColor="white" CornerRadius="15"  BackgroundColor="White" HeightRequest="1000">
+                    <Frame.Content>
+                        <StackLayout Padding="0,0,0,0"  Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                            <Grid Padding="3">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="40"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="40"/>
+                                    <RowDefinition Height="60"/>
+                                    <RowDefinition Height="40"/>
+                                    <RowDefinition Height="40"/>
+                                    <RowDefinition Height="30"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="30"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="180" />
+                                    <ColumnDefinition Width="150" />
+                                </Grid.ColumnDefinitions>
+                                <Label
+                Grid.Row="0"
+                Grid.ColumnSpan="2"
+                x:Name="NameT"
+                TextColor="Black"
+                FontSize="20"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Start"
+                VerticalTextAlignment="Center"/>
+                                <Label
+                 Grid.Row="1"
+                Grid.ColumnSpan="2"
+                x:Name="LocationT"
+                TextColor="Black"
+                FontSize="15"
+                HorizontalTextAlignment="Start"
+                VerticalTextAlignment="Center"/>
+                                <Label
+                Grid.Row="2"
+                Grid.Column="0"
+                TextColor="Black"
+                FontSize="15"
+                Text="City :"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Start"
+                VerticalTextAlignment="Center"/>
+                                <Label
+                Grid.Row="2"
+                Grid.Column="1"
+                x:Name="CityT"
+                TextColor="Black"
+                FontSize="15"
+                HorizontalTextAlignment="Start"
+                VerticalTextAlignment="Center"/>
+                                <Label
+                Grid.Row="3"
+                Grid.Column="0"
+                TextColor="Black"
+                FontSize="15"
+                Text="Contact Number :"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Start"
+                VerticalTextAlignment="Center"/>
+                                <Label
+                Grid.Row="3"
+                Grid.Column="1"
+                x:Name="PhnT"
+                TextColor="Black"
+                FontSize="15"
+                HorizontalTextAlignment="Start"
+                VerticalTextAlignment="Center"/>
+                                <Label
+                Grid.Row="4"
+                Grid.Column="0"
+                TextColor="Black"
+                FontSize="15"
+                Text="Number of students joined this year :"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Start"
+                VerticalTextAlignment="Center"/>
+                                <Label
+                Grid.Row="4"
+                Grid.Column="1"
+                x:Name="NosT"
+                TextColor="Black"
+                FontSize="15"
+                HorizontalTextAlignment="Start"
+                VerticalTextAlignment="Center"/>
+                                <Label
+                Grid.Row="5"
+                Grid.Column="0"
+                TextColor="Black"
+                FontSize="15"
+                Text="Number of Seats Avilable :"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Start"
+                VerticalTextAlignment="Center"/>
+                                <Label
+                Grid.Row="5"
+                Grid.Column="1"
+                x:Name="SeatsT"
+                TextColor="Black"
+                FontSize="15"
+                HorizontalTextAlignment="Start"
+                VerticalTextAlignment="Center"/>
+                                <Label
+                Grid.Row="6"
+                Grid.ColumnSpan="2"
+                TextColor="Black"
+                FontSize="15"
+                Text="Subjects/Courses - Fees :"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Start"
+                VerticalTextAlignment="Center"/>
+                                <Label
+                Grid.Row="7"
+                Grid.ColumnSpan="2"
+                x:Name="SubT"
+                TextColor="Black"
+                FontSize="15"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"/>
+                                <Label
+                Grid.Row="8"
+                Grid.ColumnSpan="2"
+                TextColor="Black"
+                FontSize="15"
+                Text="Staff details - Proficiency :"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Start"
+                VerticalTextAlignment="Center"/>
+                                <Label
+                Grid.Row="9"
+                Grid.ColumnSpan="2"
+                x:Name="StaffT"
+                TextColor="Black"
+                FontSize="15"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"/>
+                            </Grid>
+                        </StackLayout>
+                    </Frame.Content>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+       
+    </ContentPage.Content>
+</ContentPage>

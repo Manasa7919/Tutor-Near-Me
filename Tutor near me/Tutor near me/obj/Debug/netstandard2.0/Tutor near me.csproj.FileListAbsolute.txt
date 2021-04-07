@@ -1,0 +1,20 @@
+C:\Users\Nikhil\source\repos\Tutor near me\Tutor near me\Tutor near me\bin\Debug\netstandard2.0\Tutor near me.deps.json
+C:\Users\Nikhil\source\repos\Tutor near me\Tutor near me\Tutor near me\bin\Debug\netstandard2.0\Tutor near me.dll
+C:\Users\Nikhil\source\repos\Tutor near me\Tutor near me\Tutor near me\bin\Debug\netstandard2.0\ref\Tutor near me.dll
+C:\Users\Nikhil\source\repos\Tutor near me\Tutor near me\Tutor near me\bin\Debug\netstandard2.0\Tutor near me.pdb
+C:\Users\Nikhil\source\repos\Tutor near me\Tutor near me\Tutor near me\obj\Debug\netstandard2.0\Add_tutor.xaml.g.cs
+C:\Users\Nikhil\source\repos\Tutor near me\Tutor near me\Tutor near me\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Nikhil\source\repos\Tutor near me\Tutor near me\Tutor near me\obj\Debug\netstandard2.0\Displaytutordetails.xaml.g.cs
+C:\Users\Nikhil\source\repos\Tutor near me\Tutor near me\Tutor near me\obj\Debug\netstandard2.0\Display_list_of_tutors.xaml.g.cs
+C:\Users\Nikhil\source\repos\Tutor near me\Tutor near me\Tutor near me\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Nikhil\source\repos\Tutor near me\Tutor near me\Tutor near me\obj\Debug\netstandard2.0\Tutor near me.AssemblyInfoInputs.cache
+C:\Users\Nikhil\source\repos\Tutor near me\Tutor near me\Tutor near me\obj\Debug\netstandard2.0\Tutor near me.AssemblyInfo.cs
+C:\Users\Nikhil\source\repos\Tutor near me\Tutor near me\Tutor near me\obj\Debug\netstandard2.0\Tutor near me.csproj.CoreCompileInputs.cache
+C:\Users\Nikhil\source\repos\Tutor near me\Tutor near me\Tutor near me\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Nikhil\source\repos\Tutor near me\Tutor near me\Tutor near me\obj\Debug\netstandard2.0\Tutor near me.dll
+C:\Users\Nikhil\source\repos\Tutor near me\Tutor near me\Tutor near me\obj\Debug\netstandard2.0\ref\Tutor near me.dll
+C:\Users\Nikhil\source\repos\Tutor near me\Tutor near me\Tutor near me\obj\Debug\netstandard2.0\Tutor near me.pdb
+C:\Users\Nikhil\source\repos\Tutor near me\Tutor near me\Tutor near me\obj\Debug\netstandard2.0\TutorProfile.xaml.g.cs
+C:\Users\Nikhil\source\repos\Tutor near me\Tutor near me\Tutor near me\obj\Debug\netstandard2.0\SignUpPage.xaml.g.cs
+C:\Users\Nikhil\source\repos\Tutor near me\Tutor near me\Tutor near me\obj\Debug\netstandard2.0\View\LoginPage.xaml.g.cs
+C:\Users\Nikhil\source\repos\Tutor near me\Tutor near me\Tutor near me\obj\Debug\netstandard2.0\Tutor near me.csprojAssemblyReference.cache
